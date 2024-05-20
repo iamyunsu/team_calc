@@ -10,7 +10,8 @@ TEST(calc, calcSum) {
 }
 
 TEST(calc, calcGop) {
-	EXPECT_EQ(1, 1);
+	Calc calc;
+	EXPECT_EQ(6, calc.getGop(2, 3));
 }
 
 TEST(calc, calcZegop) {

@@ -1,5 +1,8 @@
+#include <exception>
+#include <iostream>
 
 class Calc {
+public:
 	int getSum(int a, int b) {
 		return 0;
 	}
@@ -13,7 +16,7 @@ class Calc {
 		return 0;
 	}
 	int getDivide(int a, int b) {
-		return 0;
+		return a / b;
 	}
 	int getSumSum(int a, int b) {
 		return 0;

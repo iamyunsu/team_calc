@@ -2,7 +2,7 @@
 class Calc {
 public:
 	int getSum(int a, int b) {
-		return 0;
+		return a + b;
 	}
 	int getGop(int a, int b) {
 		return 0;
@@ -16,7 +16,7 @@ public:
 	int getDivide(int a, int b) {
 		return 0;
 	}
-	int getSumSum(int a, int b) {
-		return 0;
+	int getSumSum(int a, int b, int c) {
+		return a + b + c;
 	}
 };

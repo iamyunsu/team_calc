@@ -3,7 +3,10 @@
 #include "calc.cpp"
 
 TEST(calc, calcSum) {
-	EXPECT_EQ(1, 1);
+	Calc calc;
+	EXPECT_EQ(3, calc.getSum(2, 1));
+	EXPECT_EQ(3, calc.getSum(1, 2));
+	EXPECT_EQ(5, calc.getSum(2, 3));
 }
 
 TEST(calc, calcGop) {
@@ -24,5 +27,10 @@ TEST(calc, calcDivide) {
 }
 
 TEST(calc, calcSumSum) {
-	EXPECT_EQ(1, 1);
+	Calc calc;
+
+	EXPECT_EQ(6, calc.getSumSum(1, 2, 3));
+	EXPECT_EQ(-6, calc.getSumSum(-1, -2, -3));
+	EXPECT_EQ(4, calc.getSumSum(-1, 2, 3));
+	EXPECT_EQ(0, calc.getSumSum(1, 2, -3));
 }

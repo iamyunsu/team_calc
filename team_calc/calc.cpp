@@ -11,7 +11,7 @@ public:
 		return a * a;
 	}
 	int getMinus(int a, int b) {
-		return 0;
+		return a-b;
 	}
 	int getDivide(int a, int b) {
 		return 0;

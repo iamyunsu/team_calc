@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
+#include "calc.cpp"
 
 TEST(calc, calcSum) {
 	EXPECT_EQ(1, 1);
@@ -14,7 +15,8 @@ TEST(calc, calcZegop) {
 }
 
 TEST(calc, calcMinus) {
-	EXPECT_EQ(1, 1);
+	Calc calc;
+	EXPECT_EQ(1, calc.getMinus(3,2));
 }
 
 TEST(calc, calcDivide) {
